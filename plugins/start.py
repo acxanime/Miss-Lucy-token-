@@ -520,21 +520,23 @@ if USE_PAYMENT:
             except Exception as e:
                 print(e)
                 return
-            if not int(timeforprem.text) in [1, 2, 3, 4, 5]:
+            if not int(timeforprem.text) in [1, 2, 3, 4, 5, 6]:
                 await message.reply("You have given wrong input. 😖")
                 continue
             else:
                 break
         timeforprem = int(timeforprem.text)
         if timeforprem==1:
+            timestring = "1 days"
+        if timeforprem==2:
             timestring = "7 days"
-        elif timeforprem==2:
-            timestring = "1 month"
         elif timeforprem==3:
-            timestring = "3 month"
+            timestring = "1 month"
         elif timeforprem==4:
-            timestring = "6 month"
+            timestring = "3 month"
         elif timeforprem==5:
+            timestring = "6 month"
+        elif timeforprem==6:
             timestring = "1 year"
         try:
             await increasepremtime(user_id, timeforprem)
