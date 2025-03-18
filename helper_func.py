@@ -153,14 +153,16 @@ def get_exp_time(seconds):
 
 async def increasepremtime(user_id : int, timeforprem : int):
     if timeforprem == 1: 
+        realtime = 86400
+    if timeforprem == 2: 
         realtime = 86400*7
-    elif timeforprem == 2:
-        realtime = 86400*31
     elif timeforprem == 3:
-        realtime = 86400*31*3
+        realtime = 86400*31
     elif timeforprem == 4:
-        realtime = 86400*31*6
+        realtime = 86400*31*3
     elif timeforprem == 5:
+        realtime = 86400*31*6
+    elif timeforprem == 6:
         realtime = 86400*31*12
     await update_verify_status(user_id, is_verified=True, verified_time=time.time()+realtime)
 
