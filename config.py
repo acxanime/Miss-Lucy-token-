@@ -90,18 +90,16 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://graph.org/f
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
-#1 Days
-PRICE1 = os.environ.get("PRICE1", "<s>Plan not available</s>")
 #7 Days
-PRICE2 = os.environ.get("PRICE2", "70")
+PRICE1 = os.environ.get("PRICE1", "70")
 #1 Month
-PRICE3 = os.environ.get("PRICE3", "100")
+PRICE2 = os.environ.get("PRICE2", "100")
 #3 Month
-PRICE4 = os.environ.get("PRICE4", "230")
+PRICE3 = os.environ.get("PRICE3", "230")
 #6 Month
-PRICE5 = os.environ.get("PRICE5", "350")
+PRICE4 = os.environ.get("PRICE4", "350")
 #1 Year
-PRICE6 = os.environ.get("PRICE6", "600")
+PRICE5 = os.environ.get("PRICE5", "600")
 
 
 
