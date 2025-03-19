@@ -50,7 +50,7 @@ START_MSG = os.environ.get("START_MESSAGE", "<b>Hello 💕 {mention} \n\n ɪ ᴀ
 #your telegram tag without @
 OWNER_TAG = os.environ.get("OWNER_TAG", "Sitaratoons_Support_bot")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "60"))
+TIME = int(os.environ.get("TIME", "0"))
 
 
 #Shortner (token system) 
@@ -90,16 +90,18 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://graph.org/f
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
+#1 Days
+PRICE1 = os.environ.get("PRICE1", "Plan not available")
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "70")
+PRICE2 = os.environ.get("PRICE2", "70")
 #1 Month
-PRICE2 = os.environ.get("PRICE2", "100")
+PRICE3 = os.environ.get("PRICE3", "100")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "230")
+PRICE4 = os.environ.get("PRICE4", "230")
 #6 Month
-PRICE4 = os.environ.get("PRICE4", "350")
+PRICE5 = os.environ.get("PRICE5", "350")
 #1 Year
-PRICE5 = os.environ.get("PRICE5", "600")
+PRICE6 = os.environ.get("PRICE6", "600")
 
 
 
