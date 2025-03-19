@@ -91,7 +91,7 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://graph.org/f
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
 #1 Days
-PRICE1 = os.environ.get("PRICE1", "Plan not available")
+PRICE1 = os.environ.get("PRICE1", "<s>Plan not available</s>")
 #7 Days
 PRICE2 = os.environ.get("PRICE2", "70")
 #1 Month
