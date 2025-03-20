@@ -86,7 +86,7 @@ USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "True") == "True" e
 #UPI ID
 UPI_ID = os.environ.get("UPI_ID", "sitaratoons@axl")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://graph.org/file/8d5810660dc038635f5a3-14e0c7d1e0bafe58de.jpg'>Click here</a></b>")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://acxanimess.github.io/Pay/'>Click here</a></b>")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
