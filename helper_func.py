@@ -153,7 +153,7 @@ def get_exp_time(seconds):
 
 async def increasepremtime(user_id : int, timeforprem : int):
     if timeforprem == 1: 
-        realtime = 86400*1
+        realtime = 86400*3
     if timeforprem == 2: 
         realtime = 86400*7
     elif timeforprem == 3:
