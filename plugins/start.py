@@ -516,7 +516,7 @@ if USE_PAYMENT:
         user_id = int(user_id.text)
         while True:
             try:
-                timeforprem = await client.ask(text="Enter the amount of time you want to provide the premium \nChoose correctly. Its not reversible.\n\n⁕ <code>1</code> for 1 days.\n⁕ <code>2</code> for 7 days.\n⁕ <code>3</code> for 1 Month\n⁕ <code>4</code> for 3 Month\n⁕ <code>5</code> for 6 Month\n⁕ <code>6</code> for 1 year.🤑", chat_id=message.from_user.id, timeout=60)
+                timeforprem = await client.ask(text="Enter the amount of time you want to provide the premium \nChoose correctly. Its not reversible.\n\n⁕ <code>1</code> for 3 days.\n⁕ <code>2</code> for 7 days.\n⁕ <code>3</code> for 1 Month\n⁕ <code>4</code> for 3 Month\n⁕ <code>5</code> for 6 Month\n⁕ <code>6</code> for 1 year.🤑", chat_id=message.from_user.id, timeout=60)
             except Exception as e:
                 print(e)
                 return
@@ -527,7 +527,7 @@ if USE_PAYMENT:
                 break
         timeforprem = int(timeforprem.text)
         if timeforprem==1:
-            timestring = "1 days"
+            timestring = "3 days"
         if timeforprem==2:
             timestring = "7 days"
         elif timeforprem==3:
