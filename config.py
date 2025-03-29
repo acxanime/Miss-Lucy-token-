@@ -90,7 +90,7 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "<b><a href='https://acxanimess.
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
-PRICE6 = os.environ.get("PRICE6", "<s>Plan not available</s>")
+
 #7 Days
 PRICE1 = os.environ.get("PRICE1", "70")
 #1 Month
